@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "FakeAcquirer"
 include(":app")
+include(":app:fakeacquirer")

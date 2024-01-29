@@ -80,6 +80,7 @@ fun MakeSuccess() {
         Button(
             onClick = {
                 textButtonPayment = "Realizando pagamento..."
+
                 MainScope().launch {
                     FakeAcquirerSdk(context).makeTransactionFailed(object: FakeAcquirerCallback{
                         override fun transactionWithSuccess(fakeAcquirerResponse: FakeAcquirerResponse) {
